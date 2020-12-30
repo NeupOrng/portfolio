@@ -249,11 +249,20 @@ footer{
 }
 @media screen and (max-width: 768px){
     .line{
-        width: 30px;
+        width: 35px;
         height: 3px;
         background-color: black;
         margin-bottom: 5px;
         transition: all 0.3s ease-out;
+    }
+    .line:nth-child(1).change{
+        transform: rotate(-45deg) translate(-6px,6px);
+    }
+    .line:nth-child(2).change{
+        opacity: 0;
+    }
+    .line:nth-child(3).change{
+        transform: rotate(45deg) translate(-6px, -6px);
     }
     .name{
         font-size: 25px;

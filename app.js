@@ -2,6 +2,7 @@ const hamburger = document.querySelector('.hamburger');
 const nav = document.querySelector("nav");
 const navLinks = document.querySelector('.nav_links');
 const links = document.querySelectorAll('.nav_links li');
+const lines = document.querySelectorAll('.line');
 
 
 // *** add the shadow to nav bar
@@ -16,6 +17,9 @@ function toggle(){
     navLinks.classList.toggle("open");
     links.forEach(link =>{
         link.classList.toggle("fade");
+    })
+    lines.forEach(line=>{
+        line.classList.toggle("change");
     })
 }
 hamburger.addEventListener('click', () =>{
